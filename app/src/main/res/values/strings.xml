@@ -6,4 +6,10 @@
     <string name="calling911">911 응급전화 걸기</string>
     <string name="openPhoto">갤러리 열기</string>
     <string name="back">돌아가기</string>
+    <string name="btnFourbtn3">좀 그럴듯한 버튼(p112)</string>
+    <string name="inputText">홈페이지 주소 입력</string>
+    <string name="showText">글자 나타내기</string>
+    <string name="openHomepage">홈페이지 열기</string>
+    <string name="oreo">오레오</string>
+    <string name="pie">파이</string>
 </resources>

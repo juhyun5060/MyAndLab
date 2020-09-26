@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var mProfile : ImageView
     lateinit var mbutton1 : Button
     lateinit var mbutton2 : Button
+    lateinit var mbutton3 : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         mProfile = findViewById(R.id.profile)
         mbutton1 = findViewById(R.id.button1)
         mbutton2 = findViewById(R.id.button2)
+        mbutton3 = findViewById(R.id.button3)
 
         mbutton1.setOnClickListener {
             //Intent intent = new Intent(this, MainActivity.class);
@@ -29,6 +31,11 @@ class MainActivity : AppCompatActivity() {
         mbutton2.setOnClickListener {
             //val intent = Intent(this, Fourbutton2Activity::class.java)
             startActivity(Intent(this, Fourbutton2Activity::class.java))
+        }
+
+        mbutton3.setOnClickListener {
+            // Fourbutton3Activity 로 안넘어감 -> 오류 수정
+            startActivity(Intent(this, Fourbutton3Activity::class.java))
         }
     }
 }
