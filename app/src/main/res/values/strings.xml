@@ -12,4 +12,5 @@
     <string name="openHomepage">홈페이지 열기</string>
     <string name="oreo">오레오</string>
     <string name="pie">파이</string>
+    <string name="btnCal">심플 계산기(p176,위젯)</string>
 </resources>

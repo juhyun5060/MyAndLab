@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import kr.hs.emirim.s2019w09.myandlab.ch04widget.CalActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var mbutton1 : Button
     lateinit var mbutton2 : Button
     lateinit var mbutton3 : Button
+    lateinit var mbutton4 : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         mbutton1 = findViewById(R.id.button1)
         mbutton2 = findViewById(R.id.button2)
         mbutton3 = findViewById(R.id.button3)
+        mbutton4 = findViewById(R.id.button4)
 
         mbutton1.setOnClickListener {
             //Intent intent = new Intent(this, MainActivity.class);
@@ -34,8 +37,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         mbutton3.setOnClickListener {
-            // Fourbutton3Activity 로 안넘어감 -> 오류 수정
             startActivity(Intent(this, Fourbutton3Activity::class.java))
+        }
+
+        findViewById<Button>(R.id.button4).setOnClickListener {
+            startActivity(Intent(this, CalActivity::class.java))
         }
     }
 }
