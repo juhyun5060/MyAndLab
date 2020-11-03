@@ -3,45 +3,35 @@ package kr.hs.emirim.s2019w09.myandlab
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import kr.hs.emirim.s2019w09.myandlab.ch04widget.BasicWidgetActivity
 import kr.hs.emirim.s2019w09.myandlab.ch04widget.CalActivity
 
-class MainActivity : AppCompatActivity() {
-
-    // 멤버변수는 변수앞에 m붙여
-    lateinit var mProfile : ImageView
-    lateinit var mbutton1 : Button
-    lateinit var mbutton2 : Button
-    lateinit var mbutton3 : Button
-    lateinit var mbutton4 : Button
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mProfile = findViewById(R.id.profile)
-        mbutton1 = findViewById(R.id.button1)
-        mbutton2 = findViewById(R.id.button2)
-        mbutton3 = findViewById(R.id.button3)
-        mbutton4 = findViewById(R.id.button4)
+        findViewById<Button>(R.id.button1).setOnClickListener(this)
+        findViewById<Button>(R.id.button2).setOnClickListener(this)
+        findViewById<Button>(R.id.button3).setOnClickListener(this)
+        findViewById<Button>(R.id.button4).setOnClickListener(this)
+        findViewById<Button>(R.id.button5).setOnClickListener(this)
+    }
 
-        mbutton1.setOnClickListener {
-            //Intent intent = new Intent(this, MainActivity.class);
-            startActivity(Intent(this, FourbuttonActivity::class.java))
+    override fun onClick(v: View) {
+        var intent : Intent? = null
+        when(v?.id) {
+            R.id.button1 -> intent = Intent(this, FourbuttonActivity::class.java)
+            R.id.button2 -> intent = Intent(this, Fourbutton2Activity::class.java)
+            R.id.button3 -> intent = Intent(this, Fourbutton3Activity::class.java)
+            R.id.button4 -> intent = Intent(this, CalActivity::class.java)
+            R.id.button5 -> intent = Intent(this, BasicWidgetActivity::class.java)
+            else -> return
         }
-
-        mbutton2.setOnClickListener {
-            //val intent = Intent(this, Fourbutton2Activity::class.java)
-            startActivity(Intent(this, Fourbutton2Activity::class.java))
-        }
-
-        mbutton3.setOnClickListener {
-            startActivity(Intent(this, Fourbutton3Activity::class.java))
-        }
-
-        findViewById<Button>(R.id.button4).setOnClickListener {
-            startActivity(Intent(this, CalActivity::class.java))
-        }
+        startActivity(intent)
     }
 }

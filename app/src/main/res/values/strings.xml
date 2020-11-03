@@ -13,4 +13,10 @@
     <string name="oreo">오레오</string>
     <string name="pie">파이</string>
     <string name="btnCal">심플 계산기(p176,위젯)</string>
+    <string name="BasicWidget">기본위젯연습</string>
+    <string name="androidphone">안드로이드폰</string>
+    <string name="iphone">아이폰</string>
+    <string name="windowsphone">윈도우폰</string>
+    <string name="switchText">천전등</string>
+    <string name="ToggleButton">ToggleButton</string>
 </resources>

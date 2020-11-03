@@ -7,7 +7,7 @@
     tools:context=".ch04widget.CalActivity">
 
     <EditText
-        android:id="@+id/num1"
+        android:id="@+id/edNum1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/num2"
+        android:id="@+id/edNum2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -34,10 +34,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num1" />
+        app:layout_constraintTop_toBottomOf="@+id/edNum1" />
 
     <Button
-        android:id="@+id/btnPlus"
+        android:id="@+id/btnAdd"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -50,7 +50,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num2" />
+        app:layout_constraintTop_toBottomOf="@+id/edNum2" />
 
     <Button
         android:id="@+id/btnMinus"
@@ -66,7 +66,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPlus" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
     <Button
         android:id="@+id/btnMul"
