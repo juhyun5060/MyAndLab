@@ -8,11 +8,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:text="선택을 시작하겠습니까?"
-        android:textSize="36sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,27 +25,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="시작함"
-        android:textSize="36sp"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="좋아하는 애완동물은?"
-        android:textSize="36sp"
+        android:textSize="30sp"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup1"
+        app:layout_constraintStart_toStartOf="@+id/chStart"
         app:layout_constraintTop_toBottomOf="@+id/chStart" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,21 +56,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="강아지"
-            android:textSize="36sp" />
+            android:textSize="30sp" />
 
         <RadioButton
             android:id="@+id/rdCat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="고양이"
-            android:textSize="36sp" />
+            android:textSize="30sp" />
 
         <RadioButton
             android:id="@+id/rdRabbit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="토끼"
-            android:textSize="36sp" />
+            android:textSize="30sp" />
     </RadioGroup>
 
     <Button
@@ -82,17 +84,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
-        app:layout_constraintVertical_bias="0.07999998" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/ImgPet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="213dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="10dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSelect" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSelect"
+        app:layout_constraintVertical_bias="0.22" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
