@@ -20,4 +20,6 @@
     <string name="switchText">천전등</string>
     <string name="ToggleButton">ToggleButton</string>
     <string name="btnlovelypet">btnLovelyPet</string>
+    <string name="rotateImage">이미지 회전하기</string>
+    <string name="button_made_by_code">코드로 만든 버튼</string>
 </resources>
