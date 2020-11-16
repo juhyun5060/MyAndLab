@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ch06advwidget.DateTimeBookActivity"></activity>
+        <activity android:name=".ch06advwidget.ViewFlipperActivity"></activity>
+        <activity android:name=".ch06advwidget.WidgetsActivity" />
+        <activity android:name=".ch06advwidget.DateTimeBookActivity" />
         <activity android:name=".ch05layout.NoXmlActivity" />
         <activity android:name=".ch04widget.RotateImageActivity" />
         <activity android:name=".ch04widget.LovelyPetsActivity" />

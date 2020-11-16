@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     >
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/ic_launcher_background"
-        tools:context=".MainActivity">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ic_launcher_background">
 
         <ImageView
             android:id="@+id/profile"
             android:layout_width="149dp"
             android:layout_height="152dp"
-            android:contentDescription="My Profile Image"
-            android:src="@drawable/profile"
-            app:layout_constraintBottom_toTopOf="@+id/button1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/my_profile_image"
+            android:src="@drawable/profile" />
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -33,15 +28,11 @@
             android:layout_marginRight="32dp"
             android:text="@string/btnFourbtn1"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/profile" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -49,15 +40,11 @@
             android:layout_marginRight="32dp"
             android:text="@string/btnFourbtn2"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@id/button3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button1" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -65,15 +52,11 @@
             android:layout_marginRight="32dp"
             android:text="@string/btnFourbtn3"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -81,15 +64,11 @@
             android:layout_marginRight="32dp"
             android:text="@string/btnCal"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -97,15 +76,11 @@
             android:layout_marginRight="32dp"
             android:text="@string/BasicWidget"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button6"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -113,15 +88,11 @@
             android:layout_marginRight="32dp"
             android:text="@string/btnlovelypet"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button5" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button7"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -129,15 +100,11 @@
             android:layout_marginRight="32dp"
             android:text="@string/rotateImage"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button8"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button6" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button8"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -145,16 +112,11 @@
             android:layout_marginRight="32dp"
             android:text="@string/button_made_by_code"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button7"
-            app:layout_constraintBottom_toTopOf="@id/button9"/>
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button9"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -162,11 +124,19 @@
             android:layout_marginRight="32dp"
             android:text="@string/button_datetimebook"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button8" />
+            android:textSize="18sp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="@string/button_viewFlipper"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+    </LinearLayout>
 </ScrollView>
