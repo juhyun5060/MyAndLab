@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ch06advwidget.ViewFlipperActivity"></activity>
+        <activity android:name=".ch06advwidget.TabFragmentActivity"></activity>
+        <activity android:name=".ch06advwidget.TabWidgetActivity" />
+        <activity android:name=".ch06advwidget.ViewFlipperActivity" />
         <activity android:name=".ch06advwidget.WidgetsActivity" />
         <activity android:name=".ch06advwidget.DateTimeBookActivity" />
         <activity android:name=".ch05layout.NoXmlActivity" />

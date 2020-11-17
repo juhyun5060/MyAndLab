@@ -24,7 +24,7 @@ class ViewFlipperActivity : AppCompatActivity() {
         }
 
         findViewById<ConstraintLayout>(R.id.bg).setOnClickListener {
-            if (vFlipper.isAutoStart) {
+            if (vFlipper.isFlipping) {
                 vFlipper.stopFlipping()
             } else {
                 vFlipper.startFlipping()

@@ -23,6 +23,7 @@
     <string name="rotateImage">이미지 회전하기</string>
     <string name="button_made_by_code">코드로 만든 버튼</string>
     <string name="button_datetimebook">날짜시간예약</string>
-    <string name="button_viewFlipper">ViewFlipper</string>
+    <string name="button_viewFlipper">뷰플리퍼</string>
     <string name="my_profile_image">My Profile Image</string>
+    <string name="button_tabHost">탭호스트</string>
 </resources>
