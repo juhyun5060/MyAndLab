@@ -26,4 +26,6 @@
     <string name="button_viewFlipper">뷰플리퍼</string>
     <string name="my_profile_image">My Profile Image</string>
     <string name="button_tabHost">탭호스트</string>
+    <string name="button_tabfrag">탭(프라그먼트)</string>
+    <string name="button_webView">webView</string>
 </resources>

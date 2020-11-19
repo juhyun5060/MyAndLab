@@ -10,13 +10,13 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import android.widget.LinearLayout.LayoutParams as LayoutParams1
 
 @Suppress("DEPRECATION")
 class TabFragmentActivity : AppCompatActivity(), ActionBar.TabListener {
     lateinit var tabSong : ActionBar.Tab
     lateinit var tabArtist : ActionBar.Tab
     lateinit var tabAlbum : ActionBar.Tab
+    var myFrag = arrayOfNulls<MyTabFragment>(3)  // arrayOfNulls -> Null로 이루어진 배열
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,19 +40,29 @@ class TabFragmentActivity : AppCompatActivity(), ActionBar.TabListener {
         bar.addTab(tabAlbum)
     }
 
-    override fun onTabSelected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        TODO("Not yet implemented")
+    override fun onTabSelected(tab: ActionBar.Tab, ft: FragmentTransaction) {
+        var myTabFrag : MyTabFragment? = null
+        if(myFrag[tab.position] == null) {
+            myTabFrag = MyTabFragment()
+            val data = Bundle()
+            data.putString("tabName", tab.text.toString())
+            myTabFrag.arguments = data
+            myFrag[tab.position] = myTabFrag
+        } else {
+            myTabFrag = myFrag[tab.position]
+        }
+        ft.replace(android.R.id.content, myTabFrag!!)
     }
 
     override fun onTabUnselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        TODO("Not yet implemented")
+//        TODO("Not yet implemented")
     }
 
     override fun onTabReselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        TODO("Not yet implemented")
+//        TODO("Not yet implemented")
     }
 
-    class  MyTabFragment: Fragment() {
+    class  MyTabFragment: androidx.fragment.app.Fragment() {
         var tabName : String? = null
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
