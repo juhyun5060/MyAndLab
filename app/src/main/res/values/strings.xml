@@ -28,4 +28,5 @@
     <string name="button_tabHost">탭호스트</string>
     <string name="button_tabfrag">탭(프라그먼트)</string>
     <string name="button_webView">webView</string>
+    <string name="button_menu">메뉴만들기</string>
 </resources>
