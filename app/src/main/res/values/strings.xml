@@ -29,4 +29,5 @@
     <string name="button_tabfrag">탭(프라그먼트)</string>
     <string name="button_webView">webView</string>
     <string name="button_menu">메뉴만들기</string>
+    <string name="button_snackbar">스낵바</string>
 </resources>
