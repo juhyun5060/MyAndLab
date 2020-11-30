@@ -30,4 +30,5 @@
     <string name="button_webView">webView</string>
     <string name="button_menu">메뉴만들기</string>
     <string name="button_snackbar">스낵바</string>
+    <string name="button_customdialog">커스텀 대화상자</string>
 </resources>

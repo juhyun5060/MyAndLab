@@ -33,5 +33,22 @@ class SnackbarActivity : AppCompatActivity() {
             dlg.setNeutralButton("이도저도", null)
             dlg.show()
         }
+
+        findViewById<Button>(R.id.showmelistdialog).setOnClickListener {
+            val versionArray = arrayOf("짜장면", "짬뽕", "탕수육", "군만두", "동파육")
+            val checkArray = booleanArrayOf(true, false, false, false, false)
+
+            val dlg = AlertDialog.Builder(this@SnackbarActivity)
+            dlg.setTitle("좋아하는 중국집 메뉴는?").setIcon(R.mipmap.ic_launcher_round)
+//                .setItems(versionArray){
+//                    dialog, which -> (it as Button).text = versionArray[which]
+//                }
+                .setSingleChoiceItems(versionArray, 0) {
+                    dialog, which->
+                    (it as Button).text = versionArray[which]
+                }
+                .setPositiveButton("닫기", null)
+                .show()
+        }
     }
 }

@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chap07menu.SnackbarActivity"></activity>
+        <activity android:name=".chap07menu.MyWidgetActivity"></activity>
+        <activity android:name=".chap07menu.SnackbarActivity" />
         <activity android:name=".chap07menu.OptionMenuActivity" />
         <activity android:name=".ch06advwidget.WebViewActivity" />
         <activity android:name=".ch06advwidget.TabFragmentActivity" />
