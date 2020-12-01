@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import kr.hs.emirim.s2019w09.myandlab.R
 
@@ -36,7 +37,14 @@ class MyWidgetActivity : AppCompatActivity() {
                         tvName.text = dialogView.findViewById<EditText>(R.id.dlgEdt).text.toString()
                         tvEmail.text = dialogView.findViewById<EditText>(R.id.dlgEdt2).text.toString()
                 })
-                .setNegativeButton("취소", null)
+                .setNegativeButton("취소", DialogInterface.OnClickListener {
+                        dialog, which ->
+                            val toast = Toast(this@MyWidgetActivity)
+                            toastView = View.inflate(this@MyWidgetActivity, R.layout.toast1, null)
+                            toastView.findViewById<TextView>(R.id.tvToast).text = "취소했습니다"
+                            toast.view = toastView
+                            toast.show()
+                })
                 .show()
 
         }
