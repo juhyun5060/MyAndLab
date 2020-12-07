@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chap08io.ReadWriteActivity"></activity>
+        <activity android:name=".ch09canvas.CanvasActivity"></activity>
+        <activity android:name=".chap08io.ReadWriteActivity" />
         <activity android:name=".chap07menu.MyWidgetActivity" />
         <activity android:name=".chap07menu.SnackbarActivity" />
         <activity android:name=".chap07menu.OptionMenuActivity" />

@@ -12,6 +12,7 @@ import kr.hs.emirim.s2019w09.myandlab.ch04widget.LovelyPetsActivity
 import kr.hs.emirim.s2019w09.myandlab.ch04widget.RotateImageActivity
 import kr.hs.emirim.s2019w09.myandlab.ch05layout.NoXmlActivity
 import kr.hs.emirim.s2019w09.myandlab.ch06advwidget.*
+import kr.hs.emirim.s2019w09.myandlab.ch09canvas.CanvasActivity
 import kr.hs.emirim.s2019w09.myandlab.chap07menu.MyWidgetActivity
 import kr.hs.emirim.s2019w09.myandlab.chap07menu.OptionMenuActivity
 import kr.hs.emirim.s2019w09.myandlab.chap07menu.SnackbarActivity
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<Button>(R.id.button15).setOnClickListener(this)
         findViewById<Button>(R.id.button16).setOnClickListener(this)
         findViewById<Button>(R.id.button17).setOnClickListener(this)
+        findViewById<Button>(R.id.button18).setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -62,6 +64,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button15 -> intent = Intent(this, SnackbarActivity::class.java)
             R.id.button16 -> intent = Intent(this, MyWidgetActivity::class.java)
             R.id.button17 -> intent = Intent(this, ReadWriteActivity::class.java)
+            R.id.button18 -> intent = Intent(this, CanvasActivity::class.java)
             else -> return
         }
         startActivity(intent)
