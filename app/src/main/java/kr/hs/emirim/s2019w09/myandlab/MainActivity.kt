@@ -16,6 +16,7 @@ import kr.hs.emirim.s2019w09.myandlab.ch09canvas.CanvasActivity
 import kr.hs.emirim.s2019w09.myandlab.chap07menu.MyWidgetActivity
 import kr.hs.emirim.s2019w09.myandlab.chap07menu.OptionMenuActivity
 import kr.hs.emirim.s2019w09.myandlab.chap07menu.SnackbarActivity
+import kr.hs.emirim.s2019w09.myandlab.chap08io.PainterActivity
 import kr.hs.emirim.s2019w09.myandlab.chap08io.ReadWriteActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -42,6 +43,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<Button>(R.id.button16).setOnClickListener(this)
         findViewById<Button>(R.id.button17).setOnClickListener(this)
         findViewById<Button>(R.id.button18).setOnClickListener(this)
+        findViewById<Button>(R.id.button19).setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -65,6 +67,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button16 -> intent = Intent(this, MyWidgetActivity::class.java)
             R.id.button17 -> intent = Intent(this, ReadWriteActivity::class.java)
             R.id.button18 -> intent = Intent(this, CanvasActivity::class.java)
+            R.id.button19 -> intent = Intent(this, PainterActivity::class.java)
             else -> return
         }
         startActivity(intent)
